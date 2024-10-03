@@ -1,12 +1,9 @@
-# Your Name Here
+# Jaxson Viergets
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
+# 12/3/2024
+# Lab 04
 # Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# Sources, people worked with, help given to: none
 
 
 
@@ -51,7 +48,6 @@ max_temps = [
     51, 55, 55, 54, 53, 51, 43, 23, 20, 30,
     35, 32, 41, 48, 44
 ]
-
 
 min_temps = [
     23, 14, 7, 11, 13, 22, 15, 21, 23, 31,
@@ -101,5 +97,13 @@ min_temps = [
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+maxtemp = 0
+mintemp = 0
+for index in range(len(max_temps)):
+    maxtemp += max_temps[index]
+    mintemp += min_temps[index]
+print(f'{maxtemp / len(max_temps)} and {mintemp / len(min_temps)}')
 
-
+bob = sorted(max_temps) 
+joe = sorted(min_temps)
+print(f'the highest and lowest recorded temperatures are {bob[-1]} and {joe[0]} degrees fahrenheit.')
